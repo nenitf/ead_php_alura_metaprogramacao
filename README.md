@@ -26,3 +26,7 @@ docker-compose up
 
 > Para acessar o container use ``docker-compose exec app bash`` ou execute os scripts diretamente pelo Docker ``docker-compose exec app php public/arquivo-script.php``
 
+## Anotações
+
+- *Metaprogramação* é uma técnica em que o programa tem a habilidade de tratar outros programas como dado.
+- *Reflection* é a habilidade de uma linguagem de programação ser sua própria linguagem.
