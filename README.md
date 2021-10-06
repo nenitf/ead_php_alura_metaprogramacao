@@ -32,4 +32,7 @@ docker-compose up
 
 - *Metaprogramação* é uma técnica em que o programa tem a habilidade de tratar outros programas como dado.
 - *[Reflection](https://www.php.net/manual/pt_BR/book.reflection.php)* é a habilidade de uma linguagem de programação ser sua própria linguagem.
-- PHP utiliza a [ReflectionClass](https://www.php.net/reflectionclass)
+- Classes úteis:
+    - [ReflectionClass](https://www.php.net/reflectionclass)
+    - [ReflectionMethod](https://www.php.net/manual/en/class.reflectionmethod.php)
+    - [ReflectionParameter](https://www.php.net/manual/en/class.reflectionparameter.php)
