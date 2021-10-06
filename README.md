@@ -2,6 +2,20 @@
 
 ![Com grandes poderes vem grandes responsabilidades](tioben.png)
 
+```php
+<?php
+
+$reflectionClass = new ReflectionClass(ClasseExemplo::class);
+
+$propriedadePrivada = $reflectionClass->getProperty('propriedadePrivada');
+$propriedadePrivada->setAccessible(true);
+var_dump($propriedadePrivada->getValue($reflectionClass->newInstanceWithoutConstructor()));
+
+$metodoPrivado = $reflectionClass->getMethod('metodoProtegido');
+$metodoPrivado->setAccessible(true);
+var_dump($metodoPrivado->invoke($reflectionClass->newInstanceWithoutConstructor()));
+```
+
 > Projeto referente a [este](https://cursos.alura.com.br/course/metaprogramacao-php-api-reflection) curso.
 
 1. Crie o ambiente
@@ -36,3 +50,4 @@ docker-compose up
     - [ReflectionClass](https://www.php.net/reflectionclass)
     - [ReflectionMethod](https://www.php.net/manual/en/class.reflectionmethod.php)
     - [ReflectionParameter](https://www.php.net/manual/en/class.reflectionparameter.php)
+    - [ReflectionProperty](https://www.php.net/manual/en/class.reflectionproperty.php)
