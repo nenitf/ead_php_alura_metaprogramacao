@@ -1,5 +1,7 @@
 # ead_php_alura_refatoracao
 
+![Com grandes poderes vem grandes responsabilidades](tioben.png)
+
 > Projeto referente a [este](https://cursos.alura.com.br/course/metaprogramacao-php-api-reflection) curso.
 
 1. Crie o ambiente
@@ -29,4 +31,5 @@ docker-compose up
 ## Anotações
 
 - *Metaprogramação* é uma técnica em que o programa tem a habilidade de tratar outros programas como dado.
-- *Reflection* é a habilidade de uma linguagem de programação ser sua própria linguagem.
+- *[Reflection](https://www.php.net/manual/pt_BR/book.reflection.php)* é a habilidade de uma linguagem de programação ser sua própria linguagem.
+- PHP utiliza a [ReflectionClass](https://www.php.net/reflectionclass)

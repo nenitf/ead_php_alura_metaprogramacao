@@ -2,7 +2,7 @@
 
 namespace Alura\Reflection;
 
-class ClasseExemplo
+final class ClasseExemplo implements \JsonSerializable
 {
     public string $propriedadePublica = 'publica';
     protected string $propriedadeProtegida = 'protegida';
@@ -27,5 +27,10 @@ class ClasseExemplo
     private function metodoPrivado(int $a): void
     {
         echo 'Executando método privado';
+    }
+
+    public function jsonSerialize()
+    {
+        return get_object_vars($this);
     }
 }
